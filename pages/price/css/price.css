@@ -119,26 +119,36 @@ div.Package {
 
     width: 100%;
 
+    text-align: center;
+
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 
     padding: 15px;
 
     margin-top: 50px;
 }
 
+div.Package p {
+    font-size: larger;
+}
+
+div.Package div.box {
+    display: flex;
+    justify-content: space-around;
+}
+
 div.Package div.packageImg {
     display: grid;
 
-    width:45vw;
+    width:48vw;
 
     transition: width 0.5s ease;
 }
 
 div.Package img {
     width:100%;
-
-    
 
     padding: 5px;
 }
@@ -149,13 +159,8 @@ div.Package div.packageImg:hover {
 
 div.Package div.packageText {
     display: grid;
-    width: 50vw;
     transition: width 0.5s ease;
     text-align: center;
-}
-
-div.Package div.packageImg:hover ~ div.packageText {
-    width:45vw;
 }
 
 div.Package div.packageText div {
