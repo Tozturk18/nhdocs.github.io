@@ -21,7 +21,7 @@ nav.navbar {
 }
 
 nav.navbar:hover {
-    background-color: whitesmoke;
+    background-color: #dbd0bf;
     animation: navBarColor 1s ease;
 }
 
@@ -31,13 +31,14 @@ nav.navbar:hover {
     }
 
     to {
-        background-color: whitesmoke;
+        background-color: #dbd0bf;
+        ;
     }
 }
 
 @keyframes navBarColor1 {
     from {
-        background-color: whitesmoke;
+        background-color: #dbd0bf;
     }
 
     to {
@@ -136,15 +137,13 @@ div#welcome div#imageHolder img {
 }
 
 div#footer {
-
-    background-color: aliceblue !important;
-
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     width: 100vw;
     height: max-content;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    background-color: rgb(235, 235, 235)
 }
 
 div#about {
@@ -155,7 +154,7 @@ div#about {
 
     margin-top: 15px;
 
-    background-color: #7393c2;
+    background-color: #8294b3;
 }
 
 div#about img {
@@ -199,7 +198,7 @@ div#service {
 
     margin-top: 15px;
 
-    background-color: #aa706a;
+    background-color: #c19a85;
 }
 
 div#service img {
@@ -367,7 +366,7 @@ div#affilation {
 
     margin-top: 15px;
 
-    background-color: #dfc3ff6b;
+    background-color: #8a766c;
 }
 
 div#affilation img {
