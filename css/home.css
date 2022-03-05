@@ -3,7 +3,7 @@ body {
 
     color: black;
 
-    background-color: rgb(220, 235, 235);
+    background-color: rgb(235, 235, 235);
 }
 
 a {
@@ -15,18 +15,34 @@ a:hover {
     color: rgb(68, 68, 68);
 }
 
-nav.navbar { background-color: aliceblue; animation: navBarColor1 1s ease; }
+nav.navbar {
+    background-color: #ebebeb;
+    animation: navBarColor1 1s ease;
+}
 
-nav.navbar:hover { background-color: #7fd0ff47; animation: navBarColor 1s ease; }
+nav.navbar:hover {
+    background-color: whitesmoke;
+    animation: navBarColor 1s ease;
+}
 
 @keyframes navBarColor {
-    from {background-color: aliceblue;}
-    to {background-color: #7fd0ff47;}
+    from {
+        background-color: #ebebeb;
+    }
+
+    to {
+        background-color: whitesmoke;
+    }
 }
 
 @keyframes navBarColor1 {
-    from {background-color: #7fd0ff47;}
-    to {background-color: aliceblue;}
+    from {
+        background-color: whitesmoke;
+    }
+
+    to {
+        background-color: #ebebeb;
+    }
 }
 
 nav img {
@@ -49,7 +65,7 @@ div#mainContent {
 
 div#welcome {
 
-    padding: 15px;
+    padding: 25px;
 
     display: flex;
     text-align: center;
@@ -60,7 +76,7 @@ div#welcome {
     height: 100%;
     width: 100%;
 
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(235, 235, 235);
 }
 
 div#welcome div#welcomeText {
@@ -83,9 +99,10 @@ div#welcome div#welcomeText p {
 }
 
 div#welcome div#imageHolder {
-    width: 50vw;
+    width: 45vw;
     height: 45vw;
-
+    padding-top: 35px;
+    padding-left: 45px;
     transition: width 0.5s ease;
 
     display: flex;
@@ -105,8 +122,11 @@ div#welcome div#imageHolder:hover {
 }
 
 div#welcome div#intro {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin-top: 25px;
+
+
 }
 
 div#welcome div#imageHolder img {
@@ -119,10 +139,10 @@ div#footer {
 
     background-color: aliceblue !important;
 
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
-    align-items: center; 
-    width: 100vw; 
+    align-items: center;
+    width: 100vw;
     height: max-content;
     justify-content: space-around;
 }
@@ -135,7 +155,7 @@ div#about {
 
     margin-top: 15px;
 
-    background-color: #7fd0ff47;
+    background-color: #7393c2;
 }
 
 div#about img {
@@ -143,12 +163,12 @@ div#about img {
 }
 
 div#about div#aboutImg {
-    width: 47vw;
+    width: 30vw;
     transition: width 0.5s ease;
 }
 
 div#about div#aboutImg:hover {
-    width: 56.4vw;
+    width: 35.4vw;
 }
 
 div#about div#aboutText {
@@ -165,7 +185,8 @@ div#about div {
     padding: 15px;
 }
 
-div#about div h2,h3 {
+div#about div h2,
+h3 {
     text-align: center;
 }
 
@@ -178,7 +199,7 @@ div#service {
 
     margin-top: 15px;
 
-    background-color: #dfc3ff6b;
+    background-color: #aa706a;
 }
 
 div#service img {
@@ -186,12 +207,12 @@ div#service img {
 }
 
 div#service div#serviceImg {
-    width: 47vw;
+    width: 30vw;
     transition: width 0.5s ease;
 }
 
 div#service div#serviceImg:hover {
-    width: 56.4vw;
+    width: 35.4vw;
 }
 
 div#service div#serviceText {
@@ -228,12 +249,12 @@ div#contact img {
 }
 
 div#contact div#contactImg {
-    width: 47vw;
+    width: 30vw;
     transition: width 0.5s ease;
 }
 
 div#contact div#contactImg:hover {
-    width: 56.4vw;
+    width: 35.4vw;
 }
 
 div#contact div#contactText {
@@ -271,12 +292,12 @@ div#contact1 img {
 }
 
 div#contact1 div#contact1Img {
-    width: 47vw;
+    width: 30vw;
     transition: width 0.5s ease;
 }
 
 div#contact1 div#contact1Img:hover {
-    width: 56.4vw;
+    width: 35.4vw;
 }
 
 div#contact1 div#contact1Text {
@@ -313,17 +334,18 @@ div#extra img {
 }
 
 div#extra div#extraImg {
-    width: 47vw;
+    width: 30vw;
     transition: width 0.5s ease;
 }
 
 div#extra div#extraImg:hover {
-    width: 56.4vw;
+    width: 40.4vw;
 }
 
 div#extra div#extraText {
     text-align: center;
     width: 50vw;
+    font-size: 20px;
 
     transition: width 0.5s ease;
 }
@@ -353,12 +375,12 @@ div#affilation img {
 }
 
 div#affilation div#affilationImg {
-    width: 47vw;
+    width: 30vw;
     transition: width 0.5s ease;
 }
 
 div#affilation div#affilationImg:hover {
-    width: 56.4vw;
+    width: 35.4vw;
 }
 
 div#affilation div#affilationText {
@@ -374,7 +396,7 @@ div#affilation div#affilationText img {
 }
 
 div#affilation div#affilationText img:hover {
-    width: 35vw;
+    width: 35.4vw;
 }
 
 #affilationImg:hover ~ #affilationText {
@@ -433,9 +455,6 @@ div#affilation div {
         width: auto;
     }
 
-    div#affilation div#affilationImg {
-        width: 95vw;
-    }
 
     div#affilation div#affilationText {
         width: auto;
