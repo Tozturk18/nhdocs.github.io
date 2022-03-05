@@ -1,13 +1,16 @@
 body {
-    font-family: sans-serif;
+    font-family: “Playfair Display”, “Didot”, "Times New Roman", Times, serif;
 
-    color: black;
+    color: #1d1613;
 
-    background-color: rgb(219 208 191);
+    background-color: #dbd0bf;
+
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
 }
 
 a {
-    color: black;
+    color: #1d1613;
     text-decoration: none;
 }
 
@@ -15,18 +18,35 @@ a:hover {
     color: rgb(68, 68, 68);
 }
 
-nav.navbar { background-color: aliceblue; animation: navBarColor1 1s ease; }
+nav.navbar {
+    background-color: #ebebeb;
+    animation: navBarColor1 1s ease;
+}
 
-nav.navbar:hover { background-color: rgb(219 208 191); animation: navBarColor 1s ease; }
+nav.navbar:hover {
+    background-color: #dbd0bf;
+    animation: navBarColor 1s ease;
+}
 
 @keyframes navBarColor {
-    from {background-color: aliceblue;}
-    to {background-color: rgb(219 208 191);}
+    from {
+        background-color: #ebebeb;
+    }
+
+    to {
+        background-color: #dbd0bf;
+        ;
+    }
 }
 
 @keyframes navBarColor1 {
-    from {background-color: rgb(219 208 191);}
-    to {background-color: aliceblue;}
+    from {
+        background-color: #dbd0bf;
+    }
+
+    to {
+        background-color: #ebebeb;
+    }
 }
 
 nav img {
@@ -77,18 +97,17 @@ div#warrantyText {
     box-shadow: 0px 0px 20px 5px lightsteelblue;
 }
 
+
 div#mainContent {
     display: grid;
     justify-items: center;
 
     margin-top: 50px;
-
-    background-color: rgb(219 208 191);
 }
 
 div#welcome {
 
-    padding: 15px;
+    padding: 25px;
 
     display: flex;
     text-align: center;
@@ -123,9 +142,10 @@ div#welcome div#welcomeText p {
 }
 
 div#welcome div#imageHolder {
-    width: 50vw;
-    height: 35vw;
-
+    width: 45vw;
+    height: 45vw;
+    padding-top: 35px;
+    padding-left: 45px;
     transition: width 0.5s ease;
 
     display: flex;
@@ -145,8 +165,11 @@ div#welcome div#imageHolder:hover {
 }
 
 div#welcome div#intro {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin-top: 25px;
+
+
 }
 
 div#welcome div#imageHolder img {
@@ -155,125 +178,72 @@ div#welcome div#imageHolder img {
     position: absolute;
 }
 
-div.Package {
-
-    width: 90%;
-
-    text-align: center;
-
+div#footer {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-
-    padding: 15px;
-
-    margin-top: 25px;
-}
-
-div.Package p {
-    font-size: larger;
-}
-
-div.Package div.box {
-    display: flex;
-    justify-content: space-around;
-
-    width: 100%;
-
-    margin-top: 25px;
-}
-
-div.Package div.packageImg {
-    display: grid;
-
-    width:48vw;
-
-    transition: width 0.5s ease;
-
-    justify-items: center;
-}
-
-div.Package img {
-    width:75%;
-
-    padding: 5px;
-}
-
-div.Package div.packageImg:hover {
-    width:50vw;
-}
-
-div.Package div.packageText {
-    display: grid;
-    transition: width 0.5s ease;
-    text-align: center;
-}
-
-div.Package div.packageText div {
-    display: grid;
-    
-    margin-bottom: 25px;
-}
-
-div.Package div.packageText table {
-    font-size: 1.5em;
-    padding: 5px;
-}
-
-div.Package div.packageText td {
-    padding: 5px;
-}
-
-div#Package1 {
-    background-color: #8294b3;
-}
-
-div#Package2 {
-    background-color: #c19a85;
-}
-
-div#Package3 {
-    background-color: rgb(240, 240, 240);
-}
-
-div#Package4 {
-    background-color: #78807d;
-}
-
-div#Package5 {
-    background-color: #eacfca;
-}
-
-div#Package6 {
-    background-color: #8a766c;
-}
-
-div#Package7 {
-    background-color: rgb(240, 240, 240);
-}
-
-div#Package8 {
-    background-color: #c19a85;
-}
-
-div#Package9 {
-    background-color: #8294b3;
-}
-
-div#footer {
-
-    margin-top: 25px;
-
+    align-items: center;
+    width: 100vw;
+    height: max-content;
+    justify-content: space-evenly;
     background-color: rgb(240, 240, 240) !important;
 
-    display: flex; 
-    flex-wrap: wrap;
-    align-items: center; 
-    width: 100vw; 
-    height: max-content;
-    justify-content: space-around;
+    margin-top: 25px;
 }
 
+div.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 15px;
+
+    background-color: #8294b3;
+
+    width: 85%;
+    padding: 20px;
+}
+
+div.box img {
+    width: 100%;
+}
+
+div.box div.boxImage {
+    width: auto;
+    transition: width 0.5s ease;
+}
+
+div.box div.boxImage:hover {
+    width: 55vw;
+}
+
+div.box div.boxText {
+    width: 50vw;
+
+    transition: width 0.5s ease;
+}
+
+.boxImage:hover ~ .boxText {
+    width: 42vw;
+}
+
+div.box div {
+
+    padding: 10px;
+}
+
+div.box div h2,
+h3 {
+    text-align: center;
+}
+
+div#commentSect {
+    background-color: #c19a85;
+}
+
+form {
+    width:100%;
+}
 
 
 @media screen and (max-width: 1000px) {
@@ -282,12 +252,13 @@ div#footer {
         height: 50vw;
     }
 
-    div.Package img {
-        width:90vw;
+    div.box div.boxImage {
+        width: 95vw;
     }
 
-    div.Package div.packageText {
-        width: 90vw;
+    div.box div.boxText {
+        width: auto;
     }
+
 
 }
