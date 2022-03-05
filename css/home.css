@@ -181,7 +181,7 @@ div#about div#aboutText {
 }
 
 div#about div {
-    padding: 15px;
+    padding: 20px;
 }
 
 div#about div h2,
@@ -225,7 +225,7 @@ div#service div#serviceText {
 }
 
 div#service div {
-    padding: 15px;
+    padding: 20px;
 }
 
 div#service div h2 {
@@ -267,7 +267,7 @@ div#contact div#contactText {
 }
 
 div#contact div {
-    padding: 15px;
+    padding: 20px;
 }
 
 div#contact div h2 {
@@ -283,7 +283,7 @@ div#contact1 {
 
     margin-top: 15px;
 
-    background-color: #7fd0ff47;
+    background-color: #78807d;
 }
 
 div#contact1 img {
@@ -310,7 +310,7 @@ div#contact1 div#contact1Text {
 }
 
 div#contact1 div {
-    padding: 15px;
+    padding: 20px;
 }
 
 div#contact1 div h3 {
@@ -325,7 +325,7 @@ div#extra {
 
     margin-top: 15px;
 
-    background-color: #dfc3ff6b;
+    background-color: #eacfca;
 }
 
 div#extra img {
@@ -354,7 +354,7 @@ div#extra div#extraText {
 }
 
 div#extra div {
-    padding: 15px;
+    padding: 20px;
 }
 
 div#affilation {
@@ -403,7 +403,7 @@ div#affilation div#affilationText img:hover {
 }
 
 div#affilation div {
-    padding: 15px;
+    padding: 20px;
 }
 
 
