@@ -59,6 +59,17 @@ nav.navbar img:hover {
 }
 
 
+h1 {
+    text-align: center;
+}
+
+span {
+    color: #ff0000;
+    line-height: normal;
+    font-family: 'avant garde';
+    font-size: 36pt
+}
+
 div#mainContent {
     display: grid;
     justify-items: center;
@@ -66,7 +77,7 @@ div#mainContent {
     margin-top: 50px;
 }
 
-div#welcome {
+div#headerContent {
 
     padding: 25px;
 
