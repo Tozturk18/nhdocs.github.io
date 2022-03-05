@@ -196,7 +196,7 @@ div#about {
     justify-content: space-around;
     align-items: center;
 
-    margin-top: 15px;
+    margin-top: 20px;
 
     background-color: #8294b3;
 }
@@ -240,7 +240,7 @@ div#service {
     justify-content: space-around;
     align-items: center;
 
-    margin-top: 15px;
+    margin-top: 25px;
 
     background-color: #c19a85;
 }
@@ -282,7 +282,7 @@ div#contact {
     justify-content: space-around;
     align-items: center;
 
-    margin-top: 15px;
+    margin-top: 25px;
 
     background-color: rgb(240, 240, 240);
 }
@@ -325,7 +325,7 @@ div#contact1 {
     justify-content: space-around;
     align-items: center;
 
-    margin-top: 15px;
+    margin-top: 25px;
 
     background-color: #78807d;
 }
@@ -367,7 +367,7 @@ div#extra {
     justify-content: space-around;
     align-items: center;
 
-    margin-top: 15px;
+    margin-top: 25px;
 
     background-color: #eacfca;
 }
@@ -407,8 +407,8 @@ div#affilation {
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-
-    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-top: 25px;
 
     background-color: #8a766c;
 }
