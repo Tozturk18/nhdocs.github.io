@@ -46,6 +46,7 @@ nav.navbar:hover {
     }
 }
 
+
 nav img {
     width: 50px;
     transition: width 0.5s ease;
@@ -56,6 +57,7 @@ nav img {
 nav.navbar img:hover {
     width: 75px;
 }
+
 
 div#mainContent {
     display: grid;
