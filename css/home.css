@@ -4,6 +4,9 @@ body {
     color: #1d1613;
 
     background-color: #dbd0bf;
+
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
 }
 
 a {
@@ -57,6 +60,44 @@ nav.navbar img:hover {
     width: 75px;
 }
 
+div#surround {
+    width:100vw;
+    height:100vh;
+
+    background-color: #0000005e;
+
+    z-index: 10;
+    display: none;
+
+    position: fixed;
+}
+
+div#warranty {
+
+    padding: 10px;
+    width: 70vw;
+    display: none;
+    opacity: 0;
+    transition: opacity ease 1s;
+    position: fixed;
+    transform: translate(15vw,15vh);
+    text-align: center;
+    background-color: #d7f3f3;
+    z-index: 11;
+    border-radius: 15px;
+
+}
+
+div#warrantyText {
+    padding: 15px;
+    margin: 10px;
+    text-align: justify;
+    background-color: #ffffff3d;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 5px lightsteelblue;
+}
+
+
 div#mainContent {
     display: grid;
     justify-items: center;
@@ -77,7 +118,8 @@ div#welcome {
     height: 100%;
     width: 100%;
 
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(219 208 191);
+    box-shadow: 0px 5px 10px lightgoldenrodyellow;
 }
 
 div#welcome div#welcomeText {
@@ -143,7 +185,9 @@ div#footer {
     width: 100vw;
     height: max-content;
     justify-content: space-evenly;
-    background-color: rgb(235, 235, 235)
+    background-color: rgb(235, 235, 235);
+
+    margin-top: 25px;
 }
 
 div#about {
