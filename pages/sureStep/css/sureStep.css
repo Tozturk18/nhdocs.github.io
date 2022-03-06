@@ -1,6 +1,6 @@
 body {
     font-family: “Playfair Display”, “Didot”, "Times New Roman", Times, serif;
-
+    text-align: center;
     color: #1d1613;
 
     background-color: #dbd0bf;
@@ -58,15 +58,8 @@ nav.navbar img:hover {
     width: 75px;
 }
 
-
-h1 {
-    text-align: center;
-}
-
 span {
-    color: #ff0000;
     line-height: normal;
-    font-family: 'avant garde';
     font-size: 36pt
 }
 
