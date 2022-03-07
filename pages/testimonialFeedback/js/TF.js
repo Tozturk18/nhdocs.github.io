@@ -1,13 +1,15 @@
-function moveBoat() {
+function warranty() {
 
-    var seconds = 3;
+    document.getElementById("surround").style.display = "block";
 
-    const boat = document.getElementById("boat");
+    document.getElementById("warranty").style.display = "block";
+    document.getElementById("warranty").style.opacity = "1";
+    
+}
 
-    boat.style.transition = "transform "+seconds+"s ease-in";
-    boat.style.transform = "translateX(75vw)";
+function surround() {
+    document.getElementById("surround").style.display = "none";
 
-    setTimeout(function() {
-        alert("The boat left the dock");
-    },seconds*1000)
+    document.getElementById("warranty").style.display = "none";
+    document.getElementById("warranty").style.opacity = "0";
 }
