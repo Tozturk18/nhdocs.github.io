@@ -5,10 +5,11 @@ function SubmitFeedback() {
     userEmail = document.getElementById("email").value;
     tel = document.getElementById("tel").value;
     company = document.getElementById("company").value;
+    topic = document.getElementById("topic").value;
     emailContent = document.getElementById("comment").value;
 
     if (firstname != "" && lastname != "" && userEmail != "" && emailContent != "") {
-        emailContent+= "\n\n\nFirstname: " + firstname + "\nLastname: " + lastname + "\nEmail: " + userEmail + "\nTel: " + tel + "\nCompany: " + company;
+        emailContent+= "\n\n\nFirstname: " + firstname + "\nLastname: " + lastname + "\nEmail: " + userEmail + "\nTel: " + tel + "\nCompany: " + company + "\nTopic: " + topic;
         sendEmail(firstname, lastname, userEmail, emailContent);
     }
         
