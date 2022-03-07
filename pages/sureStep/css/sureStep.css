@@ -1,13 +1,13 @@
 body {
-    font-family: “Playfair Display”, “Didot”, "Times New Roman", Times, serif;
-    text-align: center;
-    color: #1d1613;
+    font-family: sans-serif;
 
-    background-color: #dbd0bf;
+    color: black;
+
+    background-color: rgb(219 208 191);
 }
 
 a {
-    color: #1d1613;
+    color: black;
     text-decoration: none;
 }
 
@@ -15,37 +15,19 @@ a:hover {
     color: rgb(68, 68, 68);
 }
 
-nav.navbar {
-    background-color: #ebebeb;
-    animation: navBarColor1 1s ease;
-}
+nav.navbar { background-color: aliceblue; animation: navBarColor1 1s ease; }
 
-nav.navbar:hover {
-    background-color: #dbd0bf;
-    animation: navBarColor 1s ease;
-}
+nav.navbar:hover { background-color: rgb(219 208 191); animation: navBarColor 1s ease; }
 
 @keyframes navBarColor {
-    from {
-        background-color: #ebebeb;
-    }
-
-    to {
-        background-color: #dbd0bf;
-        ;
-    }
+    from {background-color: aliceblue;}
+    to {background-color: rgb(219 208 191);}
 }
 
 @keyframes navBarColor1 {
-    from {
-        background-color: #dbd0bf;
-    }
-
-    to {
-        background-color: #ebebeb;
-    }
+    from {background-color: rgb(219 208 191);}
+    to {background-color: aliceblue;}
 }
-
 
 nav img {
     width: 50px;
@@ -58,9 +40,41 @@ nav.navbar img:hover {
     width: 75px;
 }
 
-span {
-    line-height: normal;
-    font-size: 36pt
+div#surround {
+    width:100vw;
+    height:100vh;
+
+    background-color: #0000005e;
+
+    z-index: 10;
+    display: none;
+
+    position: fixed;
+}
+
+div#warranty {
+
+    padding: 10px;
+    width: 70vw;
+    display: none;
+    opacity: 0;
+    transition: opacity ease 1s;
+    position: fixed;
+    transform: translate(15vw,15vh);
+    text-align: center;
+    background-color: #d7f3f3;
+    z-index: 11;
+    border-radius: 15px;
+
+}
+
+div#warrantyText {
+    padding: 15px;
+    margin: 10px;
+    text-align: justify;
+    background-color: #ffffff3d;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 5px lightsteelblue;
 }
 
 div#mainContent {
@@ -68,11 +82,13 @@ div#mainContent {
     justify-items: center;
 
     margin-top: 50px;
+
+    background-color: rgb(219 208 191);
 }
 
-div#headerContent {
+div#welcome {
 
-    padding: 25px;
+    padding: 15px;
 
     display: flex;
     text-align: center;
@@ -83,7 +99,8 @@ div#headerContent {
     height: 100%;
     width: 100%;
 
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(219 208 191);
+    box-shadow: 0px 5px 10px lightgoldenrodyellow;
 }
 
 div#welcome div#welcomeText {
@@ -106,10 +123,9 @@ div#welcome div#welcomeText p {
 }
 
 div#welcome div#imageHolder {
-    width: 45vw;
-    height: 45vw;
-    padding-top: 35px;
-    padding-left: 45px;
+    width: 50vw;
+    height: 35vw;
+
     transition: width 0.5s ease;
 
     display: flex;
@@ -129,11 +145,8 @@ div#welcome div#imageHolder:hover {
 }
 
 div#welcome div#intro {
-    padding-top: 25px;
-    padding-bottom: 10px;
-    margin-top: 25px;
-
-
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 div#welcome div#imageHolder img {
@@ -142,274 +155,123 @@ div#welcome div#imageHolder img {
     position: absolute;
 }
 
-div#footer {
+div.Package {
+
+    width: 90%;
+
+    text-align: center;
+
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    width: 100vw;
-    height: max-content;
-    justify-content: space-evenly;
-    background-color: rgb(235, 235, 235)
+    flex-direction: column;
+
+    padding: 15px;
+
+    margin-top: 25px;
 }
 
-div#about {
+div.Package p {
+    font-size: larger;
+}
+
+div.Package div.box {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
 
-    margin-top: 15px;
+    width: 100%;
 
+    margin-top: 25px;
+}
+
+div.Package div.packageImg {
+    display: grid;
+
+    width:48vw;
+
+    transition: width 0.5s ease;
+
+    justify-items: center;
+}
+
+div.Package img {
+    width:100%;
+
+    padding: 5px;
+}
+
+div.Package div.packageImg:hover {
+    width:50vw;
+}
+
+div.Package div.packageText {
+    display: grid;
+    transition: width 0.5s ease;
+    text-align: center;
+}
+
+div.Package div.packageText div {
+    display: grid;
+    
+    margin-bottom: 25px;
+}
+
+div.Package div.packageText table {
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+div.Package div.packageText td {
+    padding: 5px;
+}
+
+div#Package1 {
     background-color: #8294b3;
 }
 
-div#about img {
-    width: 100%;
-}
-
-div#about div#aboutImg {
-    width: 30vw;
-    transition: width 0.5s ease;
-}
-
-div#about div#aboutImg:hover {
-    width: 35.4vw;
-}
-
-div#about div#aboutText {
-    width: 50vw;
-
-    transition: width 0.5s ease;
-}
-
-#aboutImg:hover ~ #aboutText {
-    width: 42vw;
-}
-
-div#about div {
-    padding: 20px;
-}
-
-div#about div h2,
-h3 {
-    text-align: center;
-}
-
-div#service {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-
-    margin-top: 15px;
-
+div#Package2 {
     background-color: #c19a85;
 }
 
-div#service img {
-    width: 100%;
-}
-
-div#service div#serviceImg {
-    width: 30vw;
-    transition: width 0.5s ease;
-}
-
-div#service div#serviceImg:hover {
-    width: 35.4vw;
-}
-
-div#service div#serviceText {
-    width: 50vw;
-
-    transition: width 0.5s ease;
-}
-
-#serviceImg:hover ~ #serviceText {
-    width: 42vw;
-}
-
-div#service div {
-    padding: 20px;
-}
-
-div#service div h2 {
-    text-align: center;
-}
-
-div#contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-
-    margin-top: 15px;
-
+div#Package3 {
     background-color: rgb(240, 240, 240);
 }
 
-div#contact img {
-    width: 100%;
-}
-
-div#contact div#contactImg {
-    width: 30vw;
-    transition: width 0.5s ease;
-}
-
-div#contact div#contactImg:hover {
-    width: 35.4vw;
-}
-
-div#contact div#contactText {
-    width: 50vw;
-
-    transition: width 0.5s ease;
-}
-
-#contactImg:hover ~ #contactText {
-    width: 42vw;
-}
-
-div#contact div {
-    padding: 20px;
-}
-
-div#contact div h2 {
-    text-align: center;
-}
-
-div#contact1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-
-    margin-top: 15px;
-
+div#Package4 {
     background-color: #78807d;
 }
 
-div#contact1 img {
-    width: 100%;
-}
-
-div#contact1 div#contact1Img {
-    width: 30vw;
-    transition: width 0.5s ease;
-}
-
-div#contact1 div#contact1Img:hover {
-    width: 35.4vw;
-}
-
-div#contact1 div#contact1Text {
-    width: 50vw;
-
-    transition: width 0.5s ease;
-}
-
-#contact1Img:hover ~ #contact1Text {
-    width: 42vw;
-}
-
-div#contact1 div {
-    padding: 20px;
-}
-
-div#contact1 div h3 {
-    text-align: center;
-}
-
-div#extra {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-
-    margin-top: 15px;
-
+div#Package5 {
     background-color: #eacfca;
 }
 
-div#extra img {
-    width: 100%;
-}
-
-div#extra div#extraImg {
-    width: 30vw;
-    transition: width 0.5s ease;
-}
-
-div#extra div#extraImg:hover {
-    width: 35.4vw;
-}
-
-div#extra div#extraText {
-    text-align: center;
-    width: 50vw;
-    font-size: 20px;
-
-    transition: width 0.5s ease;
-}
-
-#extraImg:hover ~ #extraText {
-    width: 42vw;
-}
-
-div#extra div {
-    padding: 20px;
-}
-
-div#affilation {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-
-    margin-top: 15px;
-
+div#Package6 {
     background-color: #8a766c;
 }
 
-div#affilation img {
-    width: 100%;
+div#Package7 {
+    background-color: rgb(240, 240, 240);
 }
 
-div#affilation div#affilationImg {
-    width: 30vw;
-    transition: width 0.5s ease;
+div#Package8 {
+    background-color: #c19a85;
 }
 
-div#affilation div#affilationImg:hover {
-    width: 35.4vw;
+div#Package9 {
+    background-color: #8294b3;
 }
 
-div#affilation div#affilationText {
-    text-align: center;
-    width: 50vw;
+div#footer {
 
-    transition: width 0.5s ease;
-}
+    margin-top: 25px;
 
-div#affilation div#affilationText img {
-    width: 25vw;
-    transition: width 0.5s ease;
-}
+    background-color: rgb(240, 240, 240) !important;
 
-div#affilation div#affilationText img:hover {
-    width: 35.4vw;
-}
-
-#affilationImg:hover ~ #affilationText {
-    width: 42vw;
-}
-
-div#affilation div {
-    padding: 20px;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center; 
+    width: 100vw; 
+    height: max-content;
+    justify-content: space-around;
 }
 
 
@@ -420,50 +282,12 @@ div#affilation div {
         height: 50vw;
     }
 
-    div#about div#aboutImg {
-        width: 95vw;
+    div.Package img {
+        width:90vw;
     }
 
-    div#about div#aboutText {
-        width: auto;
+    div.Package div.packageText {
+        width: 90vw;
     }
-
-    div#service div#serviceImg {
-        width: 95vw;
-    }
-
-    div#service div#serviceText {
-        width: auto;
-    }
-
-    div#contact div#contactImg {
-        width: 95vw;
-    }
-
-    div#contact div#contactText {
-        width: auto;
-    }
-
-    div#contact1 div#contact1Img {
-        width: 95vw;
-    }
-
-    div#contact1 div#contact1Text {
-        width: auto;
-    }
-
-    div#extra div#extraImg {
-        width: 95vw;
-    }
-
-    div#extra div#extraText {
-        width: auto;
-    }
-
-
-    div#affilation div#affilationText {
-        width: auto;
-    }
-
 
 }
